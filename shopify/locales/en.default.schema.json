@@ -1,0 +1,70 @@
+{
+  "settings_schema": {
+    "favicon": {
+      "name": "Favicon",
+      "settings": {
+        "label": "Favicon image",
+        "info": "32x32 .png image"
+      }
+    }
+  },
+  "templates": {
+    "index": {
+      "name": "Home"
+    },
+    "list-collections": {
+      "name": "Collection list"
+    },
+    "collection": {
+      "name": "Collection"
+    },
+    "product": {
+      "name": "Product"
+    },
+    "blog": {
+      "name": "Blog"
+    },
+    "article": {
+      "name": "Article"
+    },
+    "404": {
+      "name": "404 error"
+    },
+    "cart": {
+      "name": "Cart"
+    },
+    "page": {
+      "name": "Page"
+    },
+    "contact": {
+      "name": "Contact"
+    },
+    "search": {
+      "name": "Search"
+    },
+    "password": {
+      "name": "Password"
+    },
+    "account": {
+      "name": "Account"
+    },
+    "activate-account": {
+      "name": "Activate account"
+    },
+    "addresses": {
+      "name": "Addresses"
+    },
+    "login": {
+      "name": "Login"
+    },
+    "order": {
+      "name": "Order"
+    },
+    "register": {
+      "name": "Register"
+    },
+    "reset-password": {
+      "name": "Reset password"
+    }
+  }
+}

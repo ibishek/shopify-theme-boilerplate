@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="{{ canonical_url }}" />
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin />
+
+    {%- if settings.favicon -%}
+        <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" />
+    {%- endif -%}
+
+    <title>
+        {{ page_title }}
+        {%- unless page.title contains shop.name -%}
+            - {{ shop.name }}
+        {%- endunless -%}
+    </title>
+
+    {% if page_description %}
+        <meta name="description" content="{{ page_description | escape | capitalize }}">
+    {% endif %}
+
+    {{ content_for_header }}
+</head>
+<body>
+    {{ content_for_layout }}
+
+    <script>
+        Shopify.routes = {
+            root_url: "{{ routes.root_url }}",
+            cart_url: "{{ routes.cart_url  }}",
+            cart_add_url: "{{ routes.cart_add_url }}",
+            cart_change_url: "{{ routes.cart_change_url }}",
+            cart_clear_url: "{{ routes.cart_clear_url }}",
+            collections_all_url: "{{ routes.all_products_collection_url }}"
+        }
+    </script>
+</body>
+</html>
