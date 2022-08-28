@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Setuping"
+echo "Setup started"
 mv ./shopify/assets ./
 mv ./shopify/config ./
 mv ./shopify/layout ./
