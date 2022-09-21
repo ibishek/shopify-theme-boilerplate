@@ -6,6 +6,16 @@
         "label": "Favicon image",
         "info": "32x32 .png image"
       }
+    },
+    "social": {
+      "name": "Social accounts",
+      "settings": {
+        "twitter": {
+          "username": "Twitter username",
+          "info": "Twitter username usually starts with @",
+          "placeholder": "@username"
+        }
+      }
     }
   },
   "templates": {

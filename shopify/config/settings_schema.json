@@ -17,5 +17,17 @@
         "info": "t:settings_schema.favicon.settings.info"
       }
     ]
+  },
+  {
+    "name": "t:settings_schema.social.name",
+    "settings": [
+      {
+        "type": "text",
+        "id": "twitter_username",
+        "label": "t:settings_schema.social.twitter.username",
+        "info": "t:settings_schema.social.twitter.info",
+        "placeholder": "t:settings_schema.social.twitter.placeholder"
+      }
+    ]
   }
 ]
